@@ -1,22 +1,21 @@
 # Hardware test report format samples
 
 Sample hardware test report files in every major format used in electronics and
-semiconductor manufacturing: OpenHTF, WATS (WSJF/WSXF), ATML, NI TestStand, STDF, and
-ATDF. Each file is a small, valid, original example you can download to inspect the
+semiconductor manufacturing: ATDF, ATML, NI TestStand, OpenHTF, STDF, and WATS
+(WSXF/WSJF). Each file is a small, valid, original example you can download to inspect the
 format or import into [TofuPilot](https://www.tofupilot.com).
-
-> Suggested GitHub repo description: `Sample hardware test report files — OpenHTF, WATS (WSJF/WSXF), ATML, NI TestStand, STDF, ATDF. Free downloads + import guides.`
 
 ## Formats
 
 | Format | Folder | File | Guide |
 |--------|--------|------|-------|
-| OpenHTF | [`openhtf/`](./openhtf) | `sample.openhtf.json` | [OpenHTF](https://www.tofupilot.com/docs/import/openhtf) |
-| WATS WSJF | [`wats/`](./wats) | `sample.wsjf.json` | [WSJF](https://www.tofupilot.com/docs/import/wsjf) |
-| WATS WSXF | [`wats/`](./wats) | `sample.wsxf.xml` | [WSXF](https://www.tofupilot.com/docs/import/wsxf) |
+| ATDF | [`stdf/`](./stdf) | `sample.atdf` | [ATDF](https://www.tofupilot.com/docs/import/atdf) |
 | ATML | [`atml/`](./atml) | `sample.atml-2.02.xml`, `sample.atml-5.00.xml`, `sample.atml-6.01.xml` | [ATML](https://www.tofupilot.com/docs/import/atml) |
 | NI TestStand | [`teststand/`](./teststand) | `sample.teststand.xml` | [TestStand](https://www.tofupilot.com/docs/import/teststand) |
-| STDF / ATDF | [`stdf/`](./stdf) | `sample.stdf`, `sample.atdf` | [STDF](https://www.tofupilot.com/docs/import/stdf), [ATDF](https://www.tofupilot.com/docs/import/atdf) |
+| OpenHTF | [`openhtf/`](./openhtf) | `sample.openhtf.json` | [OpenHTF](https://www.tofupilot.com/docs/import/openhtf) |
+| STDF | [`stdf/`](./stdf) | `sample.stdf` | [STDF](https://www.tofupilot.com/docs/import/stdf) |
+| WATS WSXF | [`wats/`](./wats) | `sample.wsxf.xml` | [WSXF](https://www.tofupilot.com/docs/import/wsxf) |
+| WATS WSJF | [`wats/`](./wats) | `sample.wsjf.json` | [WSJF](https://www.tofupilot.com/docs/import/wsjf) |
 
 ## About these files
 

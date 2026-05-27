@@ -1,0 +1,92 @@
+{
+  "type": "T",
+  "id": "00000000-0000-0000-0000-000000000001",
+  "pn": "TP-DEMO-1",
+  "sn": "SN-0001",
+  "rev": "A",
+  "processCode": 100,
+  "processName": "Functional Test",
+  "result": "P",
+  "machineName": "station-a",
+  "location": "Demo Lab",
+  "purpose": "Production",
+  "origin": "00000000-0000-0000-0000-0000000000aa",
+  "start": "2025-01-16T08:00:00+00:00",
+  "startUTC": "2025-01-16T08:00:00Z",
+  "uut": {
+    "execTime": 12.5,
+    "comment": "Demo functional test run",
+    "user": "operator"
+  },
+  "subUnits": [
+    {"partType": "PCBA", "pn": "SUB-PCBA-1", "rev": "A", "sn": "SUB-0001"}
+  ],
+  "miscInfos": [
+    {"description": "firmware", "text": "1.4.2", "numeric": null}
+  ],
+  "additionalData": [],
+  "root": {
+    "id": 0,
+    "group": "M",
+    "stepType": "SequenceCall",
+    "name": "MainSequence",
+    "status": "P",
+    "totTime": 12.5,
+    "causedUUTFailure": false,
+    "seqCall": {"path": "MainSequence", "name": "MainSequence", "version": "1.0"},
+    "steps": [
+      {
+        "id": 1,
+        "group": "M",
+        "stepType": "ET_NLT",
+        "name": "Supply Voltage",
+        "status": "P",
+        "totTime": 3.8,
+        "causedUUTFailure": false,
+        "numericMeas": [
+          {
+            "compOp": "GELE",
+            "name": null,
+            "status": "P",
+            "unit": "V",
+            "value": 3.31,
+            "lowLimit": 3.2,
+            "highLimit": 3.4
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "group": "M",
+        "stepType": "ET_NLT",
+        "name": "TX Power",
+        "status": "P",
+        "totTime": 8.3,
+        "causedUUTFailure": false,
+        "numericMeas": [
+          {
+            "compOp": "GELE",
+            "name": null,
+            "status": "P",
+            "unit": "dBm",
+            "value": 18.7,
+            "lowLimit": 17.0,
+            "highLimit": 20.0
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "group": "M",
+        "stepType": "ET_SVT",
+        "name": "Firmware Version",
+        "status": "P",
+        "totTime": 0.1,
+        "causedUUTFailure": false,
+        "stringMeas": [
+          {"compOp": "EQ", "name": null, "status": "P", "value": "1.4.2", "limit": "1.4.2"}
+        ]
+      }
+    ]
+  }
+}

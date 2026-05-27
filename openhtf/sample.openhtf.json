@@ -1,0 +1,127 @@
+{
+  "dut_id": "SN-0001",
+  "start_time_millis": 1737000000000,
+  "end_time_millis": 1737000012500,
+  "outcome": "PASS",
+  "outcome_details": [],
+  "marginal": false,
+  "metadata": {
+    "test_name": "TP-DEMO-1 Functional Test",
+    "config": {
+      "station_id": "station-a",
+      "stop_on_first_failure": false,
+      "allow_unset_measurements": false,
+      "capture_source": false
+    }
+  },
+  "phases": [
+    {
+      "measurements": {
+        "supply_voltage": {
+          "name": "supply_voltage",
+          "outcome": "PASS",
+          "validators": ["3.2 <= x <= 3.4"],
+          "units": {"name": "volt", "code": "VLT", "suffix": "V"},
+          "measured_value": 3.31
+        },
+        "boot_ok": {
+          "name": "boot_ok",
+          "outcome": "PASS",
+          "validators": ["x == True"],
+          "measured_value": true
+        }
+      },
+      "options": {
+        "name": null,
+        "timeout_s": null,
+        "run_if": null,
+        "requires_state": false,
+        "force_repeat": false,
+        "repeat_on_timeout": false,
+        "repeat_limit": null,
+        "run_under_pdb": false,
+        "phase_name_case": "KEEP",
+        "stop_on_measurement_fail": false
+      },
+      "diagnosers": [],
+      "subtest_name": null,
+      "start_time_millis": 1737000000200,
+      "end_time_millis": 1737000004000,
+      "attachments": {},
+      "diagnosis_results": [],
+      "failure_diagnosis_results": [],
+      "result": {"phase_result": "CONTINUE"},
+      "outcome": "PASS",
+      "marginal": false,
+      "descriptor_id": 4395007376,
+      "name": "power_on",
+      "codeinfo": {"name": "power_on", "docstring": null, "sourcecode": ""}
+    },
+    {
+      "measurements": {
+        "tx_power_dbm": {
+          "name": "tx_power_dbm",
+          "outcome": "PASS",
+          "validators": ["17.0 <= x <= 20.0"],
+          "units": {"name": "Decibel-milliwatts", "code": "DBM", "suffix": "dBm"},
+          "measured_value": 18.7
+        },
+        "firmware_version": {
+          "name": "firmware_version",
+          "outcome": "PASS",
+          "validators": ["'x' matches /^1\\.4\\.2$/"],
+          "measured_value": "1.4.2"
+        }
+      },
+      "options": {
+        "name": null,
+        "timeout_s": null,
+        "run_if": null,
+        "requires_state": false,
+        "force_repeat": false,
+        "repeat_on_timeout": false,
+        "repeat_limit": null,
+        "run_under_pdb": false,
+        "phase_name_case": "KEEP",
+        "stop_on_measurement_fail": false
+      },
+      "diagnosers": [],
+      "subtest_name": null,
+      "start_time_millis": 1737000004100,
+      "end_time_millis": 1737000012400,
+      "attachments": {},
+      "diagnosis_results": [],
+      "failure_diagnosis_results": [],
+      "result": {"phase_result": "CONTINUE"},
+      "outcome": "PASS",
+      "marginal": false,
+      "descriptor_id": 4395009210,
+      "name": "rf_check",
+      "codeinfo": {"name": "rf_check", "docstring": null, "sourcecode": ""}
+    }
+  ],
+  "subtests": [],
+  "branches": [],
+  "diagnosers": [],
+  "diagnoses": [],
+  "log_records": [
+    {
+      "level": 20,
+      "logger_name": "openhtf.test_record.station-a.power_on",
+      "source": "phase_executor.py",
+      "lineno": 307,
+      "timestamp_millis": 1737000000210,
+      "message": "Executing phase power_on"
+    },
+    {
+      "level": 20,
+      "logger_name": "openhtf.test_record.station-a.rf_check",
+      "source": "phase_executor.py",
+      "lineno": 307,
+      "timestamp_millis": 1737000004110,
+      "message": "Executing phase rf_check"
+    }
+  ],
+  "station_id": "station-a",
+  "code_info": {"name": "", "docstring": null, "sourcecode": ""}
+}

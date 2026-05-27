@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<trc:TestResultsCollection xmlns:trc="urn:IEEE-1636.1:2011:01:TestResultsCollection" xmlns:tr="urn:IEEE-1636.1:2011:01:TestResults" xmlns:c="urn:IEEE-1671:2010:Common" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ts="www.ni.com/TestStand/ATMLTestResults/2.0">
+<trc:TestResults uuid="00000000-0000-0000-0000-000000000001" xmlns:trc="urn:IEEE-1636.1:2011:01:TestResultsCollection" xmlns:tr="urn:IEEE-1636.1:2011:01:TestResults" xmlns:c="urn:IEEE-1671:2010:Common" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ts="www.ni.com/TestStand/ATMLTestResults/2.0">
+  <tr:Personnel>
+    <tr:SystemOperator ID="operator" name="operator" />
+  </tr:Personnel>
+  <tr:ResultSet ID="1" name="main.seq#MainSequence" startDateTime="2025-01-16T08:00:00" endDateTime="2025-01-16T08:00:12">
+    <tr:Outcome value="Passed" />
+    <tr:Test ID="3" name="Supply Voltage" startDateTime="2025-01-16T08:00:00" endDateTime="2025-01-16T08:00:04" testReferenceID="ID#:00000000000000000000000003">
+      <tr:Extension>
+        <ts:TSStepProperties>
+          <ts:StepType>NumericLimitTest</ts:StepType>
+          <ts:StepGroup>Main</ts:StepGroup>
+          <ts:BlockLevel value="1" />
+          <ts:Index value="0" />
+          <ts:TotalTime value="3.8" />
+          <ts:ModuleTime value="3.79" />
+        </ts:TSStepProperties>
+      </tr:Extension>
+      <tr:Outcome value="Passed" />
+      <tr:TestResult ID="tr-00000000-0000-0000-0000-000000000003" name="Numeric">
+        <tr:TestData>
+          <c:Datum value="3.31" xsi:type="ts:TS_double" nonStandardUnit="V" flags="0x2400" />
+        </tr:TestData>
+        <tr:TestLimits>
+          <tr:Limits>
+            <c:LimitPair operator="AND">
+              <c:Limit comparator="GE">
+                <c:Datum nonStandardUnit="V" value="3.2" xsi:type="ts:TS_double" flags="0x0000" />
+              </c:Limit>
+              <c:Limit comparator="LE">
+                <c:Datum nonStandardUnit="V" value="3.4" xsi:type="ts:TS_double" flags="0x0000" />
+              </c:Limit>
+            </c:LimitPair>
+            <c:Extension>
+              <ts:TSLimitProperties>
+                <ts:RawLimits>
+                  <ts:Low value="3.2" xsi:type="c:double" />
+                  <ts:High value="3.4" xsi:type="c:double" />
+                </ts:RawLimits>
+              </ts:TSLimitProperties>
+            </c:Extension>
+          </tr:Limits>
+        </tr:TestLimits>
+      </tr:TestResult>
+    </tr:Test>
+    <tr:Test ID="4" name="TX Power" startDateTime="2025-01-16T08:00:04" endDateTime="2025-01-16T08:00:12" testReferenceID="ID#:00000000000000000000000004">
+      <tr:Extension>
+        <ts:TSStepProperties>
+          <ts:StepType>NumericLimitTest</ts:StepType>
+          <ts:StepGroup>Main</ts:StepGroup>
+          <ts:BlockLevel value="1" />
+          <ts:Index value="1" />
+          <ts:TotalTime value="8.3" />
+          <ts:ModuleTime value="8.29" />
+        </ts:TSStepProperties>
+      </tr:Extension>
+      <tr:Outcome value="Passed" />
+      <tr:TestResult ID="tr-00000000-0000-0000-0000-000000000004" name="Numeric">
+        <tr:TestData>
+          <c:Datum value="18.7" xsi:type="ts:TS_double" nonStandardUnit="dBm" flags="0x2400" />
+        </tr:TestData>
+        <tr:TestLimits>
+          <tr:Limits>
+            <c:LimitPair operator="AND">
+              <c:Limit comparator="GE">
+                <c:Datum nonStandardUnit="dBm" value="17" xsi:type="ts:TS_double" flags="0x0000" />
+              </c:Limit>
+              <c:Limit comparator="LE">
+                <c:Datum nonStandardUnit="dBm" value="20" xsi:type="ts:TS_double" flags="0x0000" />
+              </c:Limit>
+            </c:LimitPair>
+            <c:Extension>
+              <ts:TSLimitProperties>
+                <ts:RawLimits>
+                  <ts:Low value="17" xsi:type="c:double" />
+                  <ts:High value="20" xsi:type="c:double" />
+                </ts:RawLimits>
+              </ts:TSLimitProperties>
+            </c:Extension>
+          </tr:Limits>
+        </tr:TestLimits>
+      </tr:TestResult>
+    </tr:Test>
+  </tr:ResultSet>
+  <tr:TestProgram>
+    <c:SerialNumber>station-a</c:SerialNumber>
+  </tr:TestProgram>
+  <tr:TestStation>
+    <c:SerialNumber>station-a</c:SerialNumber>
+  </tr:TestStation>
+  <tr:UUT>
+    <c:Definition>
+      <c:Identification>
+        <c:ModelName>TP-DEMO-1</c:ModelName>
+        <c:IdentificationNumbers>
+          <c:IdentificationNumber number="TP-DEMO-1" type="Part" qualifier="TP-DEMO-1" />
+        </c:IdentificationNumbers>
+      </c:Identification>
+    </c:Definition>
+    <c:SerialNumber>SN-0001</c:SerialNumber>
+  </tr:UUT>
+  <tr:Extension>
+    <ts:TSResultSetProperties>
+      <ts:NumOfResults value="2" />
+    </ts:TSResultSetProperties>
+  </tr:Extension>
+</trc:TestResults>
+</trc:TestResultsCollection>

@@ -7,6 +7,7 @@
   "marginal": false,
   "metadata": {
     "test_name": "TP-DEMO-1 Functional Test",
+    "part_number": "TP-DEMO-1",
     "config": {
       "station_id": "station-a",
       "stop_on_first_failure": false,
